@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
       - name: Build and push container image
-          uses: docker/build-push-action@v5
-          with:
-            push: true
-            tags: c8n.io/pverbist/whoami:latest
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: c8n.io/pverbist/whoami:latest
